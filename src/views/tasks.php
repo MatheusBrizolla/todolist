@@ -22,7 +22,20 @@
 
     <!-- Lista de tarefas -->
      <ul class="list-group">
-        <li class="list-group-item d-flex align-items-center">
+<?php 
+if(empty($tasks)):?>  
+<li class="list-group-item text-center text-muted">
+    Nenhuma tarefa adicionada
+</li>
+<?php endif;?>
+</ul>
+</div>
+
+
+
+</body>
+</html>
+ <!--  <li class="list-group-item d-flex align-items-center">
           <form action="" class="me-3">
             <input type="hidden" name="action" value="toggle"/>
             <input type="hidden" name="id" value="id_do_item"/>
@@ -41,5 +54,3 @@
         </li>
      </ul>
     </div>
-</body>
-</html>

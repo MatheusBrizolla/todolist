@@ -2,7 +2,7 @@
     // Retorna as tarefas da sessão ou inicia um array vazio
     function getTasks(){
         // Digite o seu código aqui
-        return $_SESSION['tasks']?? [];     
+        return $_SESSION['tasks'] ?? [];     
     }
 
     // Adiciona uma nova task no array
